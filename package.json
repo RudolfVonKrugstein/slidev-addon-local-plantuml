@@ -1,0 +1,27 @@
+{
+  "name": "slidev-addon-local-plantuml",
+  "version": "0.0.1",
+  "description": "Replaces the slidev plantuml implementation and requires internet only during build time",
+  "main": "index.js",
+  "scripts": {
+    "dev": "slidev example.md",
+    "build": "slidev build example.md",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png",
+    "format": "prettier --config .prettierrc '**/*.ts' --write"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@slidev/cli": "^0.40.3",
+    "@types/plantuml-encoder": "^1.4.0",
+    "eslint": "^8.34.0",
+    "prettier": "^2.8.4"
+  },
+  "dependencies": {
+    "@slidev/theme-default": "^0.21.2",
+    "axios": "^1.3.3",
+    "plantuml-encoder": "^1.4.0",
+    "ts-md5": "^1.3.1"
+  }
+}
